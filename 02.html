@@ -1,0 +1,24 @@
+<script>
+    //Problema: Encontrar o maior número no array
+    /*
+    Dada a lista de números inteiros, encontre o maior número da lista e apresente para o usuário.
+    let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+    */
+    //AQUI, USE FOR...OF!
+
+    //Entrada
+    let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+
+    //Processamento
+    let maior = [];
+
+    for(let item of lista){
+        maior.push(item);
+        maior.sort((a, b) => a - b);
+    }
+    
+    const fim = maior.slice(-1);
+
+    //Saída
+    document.write(`O maior número desta lista é ${fim}.`)
+</script>

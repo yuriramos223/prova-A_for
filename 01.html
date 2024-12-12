@@ -1,0 +1,22 @@
+<script>
+    //Problema: Multiplicação de elementos do array
+    /*
+    Considere a seguinte lista de números inteiros:
+    let lista = [4, 5, 2, 3];
+    Multiplique todos os elementos da lista e apresente o resultado para o usuário.
+    */
+    //AQUI, USE FOR...OF!
+
+    //Entrada
+    let lista = [4, 5, 2, 3];
+
+    //Processamento
+    let multi = [];
+
+    for(let item of lista){
+        const calculo = item*item;
+        multi.push(calculo);
+    }
+    //Saída
+    document.write(`O resultado da multiplicação entre "4, 5, 2 e 3" é: ${multi.join(", ")}.`)
+</script>

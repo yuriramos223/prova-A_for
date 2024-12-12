@@ -1,0 +1,29 @@
+<script>
+    //Problema: Verificar palíndromo
+    /*
+    Considere a seguinte lista de itens:
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+    Verifique quais itens da  lista são palíndromos e retorne a lista com os palíndromos encontrados. Os demais devem ser desconsiderados.
+    */
+    //AQUI, USE QUALQUER ESTRUTURA DE REPEETIÇÃO QUE DESEJAR!
+
+    //Entrada
+    let lista = ['arara', 'para', 'radar', 'tomate', 'osso', 'ana', 'casa', 'ovo'];
+
+    //Processamento
+
+    //DESISTI
+    // Palíndromos = palavras que são iguais ao contrário
+    let pali = [];
+
+    for(let item of lista){
+        let primeira = item.indexOf("a");
+        let ultima = item.lastIndexOf("a");
+
+        if(primeira !== ultima){
+            pali.push(item);
+        }
+    }
+    //Saída
+    document.write(`As palavras consideradas palíndromos são: ${pali}.`)
+</script>
